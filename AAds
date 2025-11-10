@@ -1,1 +1,13 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Game Ad Page</title>
+</head>
+<body>
+    <h2>تبلیغ بازی من</h2>
+    <!-- اینجا Ad Unit خودت رو قرار بده -->
+    <iframe src="https://aads.com/ad-unit/XXXXXX" width="300" height="250"></iframe>
+</body>
+</html>
