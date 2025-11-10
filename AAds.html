@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <title>Fullscreen Game Ad</title>
     <style>
-        /* تبلیغ تمام صفحه و بدون حاشیه */
         html, body {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
+            background-color: #000;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #000; /* اختیاری، پس زمینه سیاه */
         }
         iframe {
             width: 100%;
             height: 100%;
-            border: none;
+            border: 0;
+            overflow: hidden;
         }
     </style>
 </head>
 <body>
-    <!-- جای Ad Unit خودت: لینک واقعی را جایگزین کن -->
-    <iframe src="https://aads.com/ad-unit/2416735"></iframe>
+    <div id="frame" style="width:100%; height:100%; position:relative; z-index:99998;">
+        <iframe data-aa='2416746' src='//acceptable.a-ads.com/2416746/?size=Adaptive'></iframe>
+    </div>
 </body>
 </html>
