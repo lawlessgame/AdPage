@@ -10,29 +10,38 @@
         body {
             margin: 0;
             font-family: sans-serif;
-            background: linear-gradient(135deg, #020617, #0f172a);
+            /* تصویر به عنوان بک‌گراند */
+            background: url('icon.png') no-repeat center center;
+            background-size: cover; /* تصویر کل صفحه را می‌پوشاند */
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             text-align: center;
+            /* کمی تاریکی برای بهتر دیده شدن متن */
+            position: relative;
+        }
+
+        /* Overlay تاریک برای متن خواناتر */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 0;
         }
 
         .box {
-            background: #020617;
+            position: relative; /* روی overlay قرار گیرد */
+            z-index: 1;
+            background: rgba(2,6,23,0.6); /* کمی شفاف */
             padding: 20px;
             border-radius: 18px;
             max-width: 420px;
             width: 90%;
             box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-        }
-
-        .banner {
-            width: 100%;
-            border-radius: 14px;
-            margin-bottom: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
         }
 
         h1 {
@@ -80,10 +89,6 @@
 
 <body>
     <div class="box">
-
-        <!-- بنر بازی -->
-        <img src="icon.png" alt="Driver X Banner" class="banner">
-
         <h1>Driver X</h1>
         <p>Official Game Landing Page</p>
 
